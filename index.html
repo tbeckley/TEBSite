@@ -5,89 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/StyleSheet.css" />
 </head>
 
 <body>
-    <div class="container">
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="index.html">Thomas's Site</a>
-            <ul class="navbar-nav mr-auto">
+    <div class="row">
+        <div class="container">
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">Thomas's Site</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        Projects
+                    </li>
+                </ul>
+            </nav>
+            <br />
+
+            <!--INTRO-->
+            <div class="card text-black bg-light">
+                <div class="card-body">
+                    <blockquote class="card-blockquote">
+                        <h1>Welcome!</h1>
+                        <p>Thanks for dropping by my website! Take a look at some of my projects, and feel free to give some feedback!</p>
+                    </blockquote>
+                </div>
+            </div>
+
+            <br />
+
+            <!--Projects-->
+            <ul class="nav nav-tabs">
+                <h3> Projects: &nbsp; </h3>
                 <li class="nav-item">
-                    Projects
+                    <a class="nav-link" data-toggle="tab" href="#home">Website</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#profile">Profile</a>
                 </li>
             </ul>
-        </nav>
-
-        <br />
-
-        <!--INTRO-->
-        <div class="card text-black bg-light">
-            <div class="card-body">
-                <blockquote class="card-blockquote">
-                    <h1>Welcome!</h1>
-                    <p>Thanks for dropping by my website! Take a look at some of my projects, and feel free to give some feedback!</p>
-                </blockquote>
-            </div>
-        </div>
-
-        <br />
-
-        <!--Projects-->
-        
-        <ul class="nav nav-tabs">
-            <li class="nav-item"><a href="#a" data-toggle="tab">a</a></li>
-            <li class="nav-item"><a href="#b" data-toggle="tab">b</a></li>
-            <li class="nav-item"><a href="#c" data-toggle="tab">c</a></li>
-            <li class="nav-item"><a href="#d" data-toggle="tab">d</a></li>
-        </ul>
-
-        <div class="tab-content">
-            <div class="tab-pane active" id="a">AAA</div>
-            <div class="tab-pane" id="b">BBB</div>
-            <div class="tab-pane" id="c">CCC</div>
-            <div class="tab-pane" id="d">DDD</div>
-        </div>
-
-        <br />
-
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#profile">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-                    <a class="dropdown-item" href="#home">Action</a>
-                    <a class="dropdown-item" href="#profile">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane active show" id="home">
+                    <div class="row verticalCenter">
+                        <div class="col col-xl-9">
+                            This is my website! I've been experimenting on and off with different boostrap techniques, and am using it in an exersize in server hosting and management.
+                        </div>
+                        <div class="col col-xl-3">
+                            <form action="https://github.com/teb951999/TEBSite">
+                                <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </li>
-        </ul>
-        <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade in" id="home">
-                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                <div class="tab-pane" id="profile">
+                    <div class="row verticalCenter">
+                        <div class="col col-md-9">
+                            This is my chore management application. I furthured my knowledge of API servers, CRUD operations, AngularJS, OWIN/authentication, tokens, and lots more!
+                            It contains two components, the API server (written in C#), and the front end (AngularJS on top of ASP.NET) 
+                        </div>
+                        <div class="col col-md-3">
+                            <form action="https://github.com/teb951999/TEBSite">
+                                <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
+                            </form>
+                            <form action="https://github.com/teb951999/TEBSite">
+                                <button class="btn btn-pink"><i class="fa fa-github" style="margin-right: 3px"></i>Deployment</button>
+                            </form>
+
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade active show" id="profile">
-                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-            </div>
-            <div class="tab-pane fade" id="dropdown1">
-                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-            </div>
-            <div class="tab-pane fade" id="dropdown2">
-                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
-            </div>
+            <br />
         </div>
+    </div>
+    <!--Test button-->
 </body>
 
 </html>

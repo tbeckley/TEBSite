@@ -1,0 +1,13 @@
+﻿.btn-purple {
+    background: #7d14e0;
+}
+.btn-pink{
+    background: #ef2d8b;
+    margin-top: 5px;
+}
+.verticalCenter{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    text-align: justify
+}
