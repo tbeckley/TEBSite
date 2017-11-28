@@ -5,6 +5,11 @@
     background: #ef2d8b;
     margin-top: 5px;
 }
+.btn-linkedin{
+    background: #0034f2;
+    color: #ffffff;
+}
+
 .verticalCenter{
     display: flex;
     align-items: center;

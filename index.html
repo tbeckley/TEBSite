@@ -17,11 +17,13 @@
             <!--NAVBAR-->
             <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
                 <a class="navbar-brand" href="index.html">Thomas's Site</a>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        Projects
-                    </li>
-                </ul>
+                <ul class="navbar-nav mr-auto"></ul>
+                <div class="my-2 my-lg-0">
+                    <div class="btn-group">
+                        <button class="btn btn-linkedin" onclick="location.href='https://www.linkedin.com/in/tbeckley99/';"><i class="fa fa-linkedin-square" style="margin-right: 3px"></i>LinkedIn</button>
+                        <button class="btn btn-success" onclick="location.href='https://drive.google.com/file/d/1davUmdaaW69k6rp01QMpWJS8bXTFaEmi/view?usp=sharing'"><i class="fa fa-file-text-o" style="margin-right: 3px"></i>Resume</button>
+                    </div>
+                </div>
             </nav>
             <br />
 
@@ -34,52 +36,131 @@
                     </blockquote>
                 </div>
             </div>
-
             <br />
 
-            <!--Projects-->
-            <ul class="nav nav-tabs">
-                <h3> Projects: &nbsp; </h3>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#home">Website</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#profile">Profile</a>
-                </li>
-            </ul>
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane active show" id="home">
-                    <div class="row verticalCenter">
-                        <div class="col col-xl-9">
-                            This is my website! I've been experimenting on and off with different boostrap techniques, and am using it in an exersize in server hosting and management.
-                        </div>
-                        <div class="col col-xl-3">
-                            <form action="https://github.com/teb951999/TEBSite">
-                                <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
-                            </form>
+            <!--ABOUT-ME-->
+            <div class="row verticalCenter">
+                <div class="col col-xl-6">
+                    <img src="assets/img/profile_picture_resized.png" style="width:100%;"/>
+                </div>
+                <div class="col col-xl-6">
+                    <h3 style="text-align:center">About me</h3>
+                    <p>
+                        Hello! I'm Thomas! I'm a engineerng undregrad who loves anything tech-y.
+                        I have interests rangnig from coding to camping to sports and I'm sure almost everything in between.
+                    </p>
+
+                    <p>
+                        I'm currently studying Systems Design Engineering at the Unviersity of Waterloo, and am loving it.
+                        I'm open to trying something new (usually), diving into the deep end of a project, and learning lots along the way.
+                    </p>
+                    <p>
+                        Other things I love include breaking things (that are fixable of course),
+                        fixing the things I've broken amd figuring out what to do with the things that I can't fix (not really the last one to be honest).
+                    </p>
+                </div>
+            </div>
+            <br />
+            
+            <!--TESTIMONIALS-->
+            <div>
+                <h3>
+                    Testimonials
+                </h3>
+                <div class="row">
+                    <blockquote class="blockquote col-xl-6">
+                        <p>This guy assumedly knows some things.</p>
+                        <footer class="blockquote-footer">Someone, <cite title="Source Title">somewhere, probably</cite></footer>
+                    </blockquote>
+                    <blockquote class="blockquote col-xl-6">
+                        <p>I really need more quotes... Feel free to email me at thomas@tbeckley.com with glowing praise!</p>
+                        <footer class="blockquote-footer">Thomas, <cite title="Source Title">a moment of inspiration against a deadline</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <br />
+
+            <!--PROJECTS-->
+            <div>
+                <h3>Projects</h3>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#home">Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#cma">Chore Managment app</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#3314k">Robotics Code</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane active show" id="home">
+                        <div class="row verticalCenter">
+                            <div class="col col-xl-9">
+                                This is my website! I've been experimenting on and off with different boostrap techniques, and am using it in an exersize in server hosting and management.
+                            </div>
+                            <div class="col col-xl-3">
+                                <form action="https://github.com/teb951999/TEBSite">
+                                    <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane" id="profile">
-                    <div class="row verticalCenter">
-                        <div class="col col-md-9">
-                            This is my chore management application. I furthured my knowledge of API servers, CRUD operations, AngularJS, OWIN/authentication, tokens, and lots more!
-                            It contains two components, the API server (written in C#), and the front end (AngularJS on top of ASP.NET) 
+                    <div class="tab-pane" id="cma">
+                        <div class="row verticalCenter">
+                            <div class="col col-md-9">
+                                This is my chore management application. I furthured my knowledge of API servers, CRUD operations, AngularJS, OWIN/authentication, tokens, and lots more!
+                                It contains two components, the API server (written in C#), and the front end (AngularJS on top of ASP.NET)
+                            </div>
+                            <div class="col col-md-3">
+                                <form action="https://github.com/teb951999/Chorelyapi">
+                                    <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source (Soon)</button>
+                                </form>
+                                <form action="https://www.tbeckley.com">
+                                    <button class="btn btn-pink"><i class="fa fa-github" style="margin-right: 3px"></i>Deployment (Soon)</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="col col-md-3">
-                            <form action="https://github.com/teb951999/TEBSite">
-                                <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
-                            </form>
-                            <form action="https://github.com/teb951999/TEBSite">
-                                <button class="btn btn-pink"><i class="fa fa-github" style="margin-right: 3px"></i>Deployment</button>
-                            </form>
-
-                            
+                    </div>
+                    <div class="tab-pane" id="3314k">
+                        <div class="row verticalCenter">
+                            <div class="col col-md-9">
+                                This is my robotics repository. It contains a variety of robotics (ROBOTC) code that has been useful over the years and is open for all to use.
+                                Originally developed for the 3314K robotics team at PACE in Richmond Hill.
+                            </div>
+                            <div class="col col-md-3">
+                                <form action="https://github.com/teb951999/3314k">
+                                    <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <br />
+
+            <!--CONTACT-->
+            <div>
+                <form>
+                    <fieldset>
+                        <h3>Contact Me!</h3> <h6>*Note that this form doesn't actually do anything but it will when I learn PHP and fix my SMTP server.</h6>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" id="name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Contact info (feel free to leave this blank)</label>
+                            <input class="form-control" type="text" id="name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">Comments (on the site, or me in general)</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
     <!--Test button-->
