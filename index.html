@@ -1,169 +1,235 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Page</title>
 
+<head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/font-awesome-min.css">
+    <link rel="stylesheet" href="assets/css/hacker.css">
     <link rel="stylesheet" href="assets/css/StyleSheet.css" />
+
 </head>
 
 <body>
-    <div class="row">
-        <div class="container">
-            <!--NAVBAR-->
-            <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
-                <a class="navbar-brand" href="index.html">Thomas's Site</a>
-                <ul class="navbar-nav mr-auto"></ul>
-                <div class="my-2 my-lg-0">
-                    <div class="btn-group">
-                        <button class="btn btn-linkedin" onclick="location.href='https://www.linkedin.com/in/tbeckley99/';"><i class="fa fa-linkedin-square" style="margin-right: 3px"></i>LinkedIn</button>
-                        <button class="btn btn-success" onclick="location.href='https://drive.google.com/file/d/1davUmdaaW69k6rp01QMpWJS8bXTFaEmi/view?usp=sharing'"><i class="fa fa-file-text-o" style="margin-right: 3px"></i>Resume</button>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h1>Welcome to Thomas's Site</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="picCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#picCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#picCarousel" data-slide-to="1"></li>
+                        <li data-target="#picCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="assets/images/a (1).jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/a (2).jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/a (3).jpg">
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <br />
-
-            <!--INTRO-->
-            <div class="card text-black bg-light">
-                <div class="card-body">
-                    <blockquote class="card-blockquote">
-                        <h1>Welcome!</h1>
-                        <p>Thanks for dropping by my website! Take a look at some of my projects, and feel free to give some feedback!</p>
-                    </blockquote>
-                </div>
             </div>
-            <br />
-
-            <!--ABOUT-ME-->
-            <div class="row verticalCenter">
-                <div class="col col-xl-6">
-                    <img src="assets/img/profile_picture_resized.png" style="width:100%;"/>
-                </div>
-                <div class="col col-xl-6">
-                    <h3 style="text-align:center">About me</h3>
+            <div class="col-sm-6">
+                <p>
+                    <h2>
+                        About Me
+                    </h2>
                     <p>
-                        Hello! I'm Thomas! I'm a engineerng undregrad who loves anything tech-y.
-                        I have interests rangnig from coding to camping to sports and I'm sure almost everything in between.
+                        Paragraph
                     </p>
-
-                    <p>
-                        I'm currently studying Systems Design Engineering at the Unviersity of Waterloo, and am loving it.
-                        I'm open to trying something new (usually), diving into the deep end of a project, and learning lots along the way.
-                    </p>
-                    <p>
-                        Other things I love include breaking things (that are fixable of course),
-                        fixing the things I've broken amd figuring out what to do with the things that I can't fix (not really the last one to be honest).
-                    </p>
-                </div>
+                </p>
             </div>
-            <br />
-            
-            <!--TESTIMONIALS-->
-            <div>
-                <h3>
-                    Testimonials
-                </h3>
-                <div class="row">
-                    <blockquote class="blockquote col-xl-6">
-                        <p>This guy assumedly knows some things.</p>
-                        <footer class="blockquote-footer">Someone, <cite title="Source Title">somewhere, probably</cite></footer>
-                    </blockquote>
-                    <blockquote class="blockquote col-xl-6">
-                        <p>I really need more quotes... Feel free to email me at thomas@tbeckley.com with glowing praise!</p>
-                        <footer class="blockquote-footer">Thomas, <cite title="Source Title">a moment of inspiration against a deadline</cite></footer>
-                    </blockquote>
-                </div>
-            </div>
-            <br />
-
-            <!--PROJECTS-->
-            <div>
-                <h3>Projects</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Skills</h3>
                 <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#home">Website</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tab" href="#frontend">Web / Mobile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#cma">Chore Managment app</a>
+                        <a class="nav-link" data-toggle="tab" href="#backend">Backend</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#3314k">Robotics Code</a>
+                        <a class="nav-link" data-toggle="tab" href="#server">Server</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#hardware">Server</a>
                     </li>
                 </ul>
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane active show" id="home">
-                        <div class="row verticalCenter">
-                            <div class="col col-xl-9">
-                                This is my website! I've been experimenting on and off with different boostrap techniques, and am using it in an exersize in server hosting and management.
-                            </div>
-                            <div class="col col-xl-3">
-                                <form action="https://github.com/teb951999/TEBSite">
-                                    <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
-                                </form>
-                            </div>
-                        </div>
+                <div id="skillsTab" class="tab-content">
+                    <div class="tab-pane active" id="frontend">
+                        <ul>
+                            <li>
+                                React-Native
+                            </li>
+                            <li>
+                                React-Native-Windows
+                            </li>
+                            <li>
+                                Cucumber
+                            </li>
+                            <li>
+                                Calabash
+                            </li>
+                        </ul>
                     </div>
-                    <div class="tab-pane" id="cma">
-                        <div class="row verticalCenter">
-                            <div class="col col-md-9">
-                                This is my chore management application. I furthured my knowledge of API servers, CRUD operations, AngularJS, OWIN/authentication, tokens, and lots more!
-                                It contains two components, the API server (written in C#), and the front end (AngularJS on top of ASP.NET)
-                            </div>
-                            <div class="col col-md-3">
-                                <form action="https://github.com/teb951999/Chorelyapi">
-                                    <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source (Soon)</button>
-                                </form>
-                                <form action="https://www.tbeckley.com">
-                                    <button class="btn btn-pink"><i class="fa fa-github" style="margin-right: 3px"></i>Deployment (Soon)</button>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="tab-pane" id="backend">
+                        <ul>
+                            <li>
+                                C
+                            </li>
+                            <li>
+                                C++
+                            </li>
+                            <li>
+                                C#
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Git
+                            </li>
+                            <li>
+                                TFS
+                            </li>
+                        </ul>
                     </div>
-                    <div class="tab-pane" id="3314k">
-                        <div class="row verticalCenter">
-                            <div class="col col-md-9">
-                                This is my robotics repository. It contains a variety of robotics (ROBOTC) code that has been useful over the years and is open for all to use.
-                                Originally developed for the 3314K robotics team at PACE in Richmond Hill.
-                            </div>
-                            <div class="col col-md-3">
-                                <form action="https://github.com/teb951999/3314k">
-                                    <button class="btn btn-purple"><i class="fa fa-github" style="margin-right: 3px"></i>Source</button>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="tab-pane" id="server">
+                        <ul>
+                            <li>
+                                EXSi
+                            </li>
+                            <li>
+                                FreeNAS
+                            </li>
+                            <li>
+                                MS-SQL
+                            </li>
+                            <li>
+                                AWS/Azure
+                            </li>
+                            <li>
+                                Basic Windows Server
+                            </li>
+                            <li>
+                                Bash
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="hardware">
+                        <ul>
+                            <li>
+                                Arduino / MIPS
+                            </li>
+                            <li>
+                                Raspberry Pi / Basic linux boards
+                            </li>
+                            <li>
+                                Basic digital circuitry
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <br />
-
-            <!--CONTACT-->
-            <div>
-                <form>
-                    <fieldset>
-                        <h3>Contact Me!</h3> <h6>*Note that this form doesn't actually do anything but it will when I learn PHP and fix my SMTP server.</h6>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input class="form-control" type="text" id="name" />
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Contact info (feel free to leave this blank)</label>
-                            <input class="form-control" type="text" id="name" />
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleTextarea">Comments (on the site, or me in general)</label>
-                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </fieldset>
-                </form>
+            <div class="col-md-6">
+                <h3>Projects</h3>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tab" href="#proj1">Cacheit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#proj2">EchidnaBot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#proj3">Server</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#proj4">Server</a>
+                    </li>
+                </ul>
+                <div id="projectsTab" class="tab-content">
+                    <div class="tab-pane active" id="proj1">
+                        <ul>
+                            <li>
+                                Cacheit - Sane offline Reddit caching
+                            </li>
+                            <li>
+                                EchidnaBot - Decentralized to-do list for teams
+                            </li>
+                            <li>
+                                Marvin
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="proj2">
+                        <ul>
+                            <li>
+                                C
+                            </li>
+                            <li>
+                                C++
+                            </li>
+                            <li>
+                                C#
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Git
+                            </li>
+                            <li>
+                                TFS
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="proj3">
+                        <ul>
+                            <li>
+                                EXSi
+                            </li>
+                            <li>
+                                FreeNAS
+                            </li>
+                            <li>
+                                MS-SQL
+                            </li>
+                            <li>
+                                AWS/Azure
+                            </li>
+                            <li>
+                                Basic Windows Server
+                            </li>
+                            <li>
+                                Bash
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="proj4">
+                        <ul>
+                            <li>
+                                Arduino / MIPS
+                            </li>
+                            <li>
+                                Raspberry Pi / Basic linux boards
+                            </li>
+                            <li>
+                                Basic digital circuitry
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--Test button-->
 </body>
-
-</html>
